@@ -1,0 +1,594 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+#HeaderContainer {
+  box-shadow: 0px 5px 10px black;
+}
+
+
+.logomenu:hover{
+
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  filter:drop-shadow(0 0 5px rgba(172, 255, 47, 0.616));
+
+
+}
+
+
+
+.mtmxonline:hover{
+
+filter:drop-shadow(0 0 5px rgba(172, 255, 47, 0.616));
+}
+
+
+
+
+/********** SECTION MAIN LOGO***************/
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p2/2623338-black-and-green-modern-material-design-with-a-hexagonal-mesh-dark-metal-background-template-for-your-business-vector-abstract-widescreen-background-vetor.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 40vmax;
+  -webkit-box-shadow: 0px 18px 22px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 18px 22px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 18px 22px -8px rgba(0, 0, 0, 0.75);
+}
+
+.MAINLOGO {
+  width: 50vmax;
+  padding: 50px;
+  transition: transform 0.3s; /* Animation */
+  margin: 0 auto;
+
+  animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+ 
+
+  filter: drop-shadow(0 0 5px greenyellow);
+}
+
+/*
+ .MAINLOGO:hover {
+  width: 55vmax;
+  transition: 0.9s;
+  }
+ */
+
+/**********************FADE MAIN LOGO***************/
+
+
+
+.card {
+  background-color: rgba(194, 22, 22, 0);
+}
+
+/************************** SECTION SOBRE *************************/
+
+.SectionSobre {
+   background-color: white;
+  -webkit-box-shadow: 0px -18px 22px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -18px 22px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -18px 22px -8px rgba(0, 0, 0, 0.75);
+  padding: 50px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+
+.DivTextoSobre {
+  margin: 10px 30px;
+  width: 400px;
+  color: rgb(0, 0, 0);
+  font-size: 1.4vmax;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.DivTextoSobre h1 {
+  font-family: 'Patua One', cursive;
+  color: rgb(0, 0, 0);
+  font-size: 4vmax;
+  font-weight: bolder;
+  text-align: center;
+   animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.DivTextoSobre h2 {
+  font-family: 'Yantramanav', sans-serif;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+  font-size: 2vmax;
+  font-weight: bolder;
+}
+
+.DivTextoSobre p {
+font-size: 1.5vmax;
+text-align: justify;
+font-weight: bolder;
+font-family: 'Yantramanav', sans-serif;
+}
+
+#IMGSobre {
+  width: 30vmax;
+  margin: 20px 15px;
+  border-radius: 10px;
+}
+
+/************************** SECTION PLATAFORMA *************************/
+
+.SectionPlataforma {
+  border-top: 10px solid rgb(0, 0, 0);
+  background-color: rgb(95, 95, 95);
+  background-image: url(./IMGLOGOS/main-grid-1-2.jpg);
+background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding: 50px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.DivTextoPlataforma {
+  color: rgb(0, 0, 0);
+   margin: 10px 40px;
+  width: 400px;
+  }
+
+.DivTextoPlataforma h1 {
+  font-family: 'Patua One', cursive;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 2px 5px black;
+  font-size: 4vmax;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.DivTextoPlataforma h2 {
+  font-family: 'Yantramanav', sans-serif;
+  color: #fff;
+  font-size: 3vmax;
+  font-weight: bolder;
+  text-align: justify;
+}
+
+
+
+#IMGPlataforma {
+  width: 30vmax;
+  margin: 20px 15px;
+  border-radius: 10px;
+}
+
+/**********************BOTÂO MAIN - SOBRE*****************/
+
+/* From uiverse.io by @DGtalsam */
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn {
+  background: linear-gradient(0deg, rgb(217, 255, 0) 0%, rgb(74, 185, 0) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn:before,
+.btn:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  background: rgba(251, 75, 2, 1);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn:hover {
+  color: rgba(251, 75, 2, 1);
+  background: transparent;
+}
+
+.btn:hover:before {
+  height: 100%;
+}
+
+.btn:hover:after {
+  width: 100%;
+}
+
+.btn span:before,
+.btn span:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background: rgba(251, 75, 2, 1);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn span:after {
+  height: 2px;
+  width: 0%;
+}
+
+.btn span:hover:before {
+  height: 100%;
+}
+
+.btn span:hover:after {
+  width: 100%;
+}
+
+
+
+
+/*****************Section TREINAMENTO**************/
+
+.SectionTreinamento {
+  background-color: rgb(0, 0, 0);
+ background-image: url(https://i0.wp.com/astro.uni-frankfurt.de/wp-content/uploads/2014/01/iron_texture1049-1.jpg?w=1380);
+ background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+ 
+
+ 
+}
+
+.DivSectionTreinamento {
+ background-color: rgba(0, 0, 0, 0.815);
+ border-top: 10px solid rgb(0, 0, 0);
+ 
+}
+
+.h1treinamento {
+
+ font-family: 'Patua One', cursive;
+ text-align: center;
+ font-size: 3vmax;
+ color: white;
+ padding-top: 30px;
+ text-shadow: 0 0px 10px greenyellow ;
+}
+
+
+.DivSectionTreinamento h2 {
+ font-family: 'Patua One', cursive;
+ text-align: center;
+ font-size: 2.5vmax;
+ color: white;
+ padding: 30px 0;
+ text-shadow: 0 0px 10px greenyellow ;
+}
+
+
+.h3treinamento {
+  font-family: 'Patua One', cursive;
+  text-align: center;
+  font-size: 5vmax;
+  color: white;
+  padding: 30px 0;
+  text-shadow: 0 0px 10px greenyellow ;
+ }
+ 
+
+.Mente{
+ color: greenyellow;
+ 
+}
+
+.MX {
+ color: rgb(255, 136, 0);
+}
+
+
+.gridtreinamento {
+ align-items: center;
+ padding-top: 20px;
+  margin: 10px 20px;
+  background-color: rgba(0, 0, 0, 0);
+
+ /*
+ border-top-left-radius: 100px;
+ border-top-right-radius: 100px;
+ border-bottom-left-radius: 30px;
+ border-bottom-right-radius: 30px;
+
+ border: 1px solid white;
+ box-shadow: 0 5px 5px greenyellow;
+ */
+}
+
+.icongrid {
+ width: 10vmax;
+}
+
+.colgrid {
+ padding: 10px 40px;
+
+}
+
+.gridtext {
+ text-align: center;
+ color: #fff;
+ /*
+ background-color: rgba(255, 255, 255, 0.253);
+ border-bottom-left-radius: 30px;
+ border-bottom-right-radius: 30px;*/
+
+}
+
+.h5gridtitle {
+ text-align: center;
+ font-size: 1.7vmax;
+ text-shadow: 0 0px 10px greenyellow ;
+ color: rgb(255, 255, 255);
+ font-family: 'Goldman', cursive;
+ background-color: rgba(0, 0, 0, 0.493);
+ 
+
+}
+.gridtext p{
+ text-align: center;
+ background-color: rgba(0, 0, 0, 0.493);
+ text-shadow: 0 0px 10px greenyellow ;
+ color: rgb(166, 255, 0);
+font-family: arial black/
+
+}
+
+
+/****************** Section Materia 1 *************/
+
+.SectionMateria1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(167, 167, 167);
+  padding: 20px 50px;
+}
+
+iframe {
+  margin: 10px;
+  height: 30vmax;
+  background-color: white;
+  border: 2px solid white;
+  box-shadow: 0px 2px 15px black;
+}
+
+/*********************SECTION INSTAGRAM***************/
+
+#Instagram {
+  margin: 0;
+  padding: 0;
+
+}
+
+/*********************SECTION MATERIA 2***************/
+
+.SectionMateria2 {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vmax;
+  background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p2/2623338-black-and-green-modern-material-design-with-a-hexagonal-mesh-dark-metal-background-template-for-your-business-vector-abstract-widescreen-background-vetor.jpg);
+  background-position: right;
+  background-size: cover;
+}
+
+
+
+/***********************SECTION PILOTOS********************************/
+
+
+.SectionPilotos{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+
+}
+
+
+.piloto{
+  width: 300px;
+border-radius: 20px;
+margin: 10px;
+border: 2px solid white;
+
+
+}
+
+
+
+
+
+
+
+/***********************SECTION CONTATO********************************/
+.SectionContato {
+  background-color: rgb(163, 163, 163);
+
+  /* IMAGES MOTOCROSS
+
+  https://coolwallpapers.me/picsup/1335443-motocross.jpg
+
+https://cdn.wallpapersafari.com/72/93/XZDcKS.jpg
+
+  */
+  background-image: url(https://cdn.wallpapersafari.com/72/93/XZDcKS.jpg);
+flex-wrap: wrap;  
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.um-form {
+  background: linear-gradient(
+    0deg,
+    rgba(217, 255, 0, 0.336) 0%,
+    rgb(74, 185, 0) 100%
+  );
+
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 0 5px rgb(72, 255, 0);
+  width: 30vmax;
+  padding: 20px;
+  font-size: 1vmax;
+}
+
+.dois-form {
+  padding: 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(217, 255, 0, 0.336) 0%,
+    rgb(74, 185, 0) 100%
+  );
+
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 0 5px rgb(72, 255, 0);
+
+  width: 40vmax;
+  margin: 10px;
+  font-size: 1vmax;
+}
+
+
+
+.DivContato{
+font-size: 1.5vmax;
+
+}
+
+.formulariocontato{
+
+  font-size: 1.2vmax;
+}
+
+/**********SECTION PHOTO*************/
+
+/***************************************************FOOTER**************************/
+
+#Footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 15vmax;
+  color: rgb(255, 255, 255);
+  background-color: rgb(31, 33, 37);
+  box-shadow: inset 0 0px 5px black;
+}
+
+footer p {
+  font-size: 1.2vmax;
+}
+
+.Maps {
+  border-radius: 5px;
+  border: 2px solid white;
+  width: 15vmax;
+  height: 10vmax;
+}
+.LogoFooter {
+  width: 12vmax;
+}
+
+.DivEndFooter {
+}
+
+.DivContatoFooter {
+  margin: 0;
+  padding: 0;
+}
+
+/*********************SECTION FACEBOOK***************/
+#Facebook {
+  padding: 0;
+  margin: 0;
+  
+  }
+
+/*****************SCROLL BAR***************************/
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 1px 5px rgb(90, 90, 90);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(21, 177, 0);
+  border-radius: 5px;
+}
+
+/*****************************HOVERS******************/
