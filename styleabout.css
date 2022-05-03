@@ -1,0 +1,281 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+#HeaderContainer {
+  box-shadow: 0 0 8px black;
+  margin-bottom: 10vmax;
+}
+
+.logomenu:hover {
+  transform: scale(
+    1.05
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  filter: drop-shadow(0 0 2px rgb(172, 255, 47));
+}
+
+
+/************************** SECTION SOBRE *************************/
+
+.SectionAbout {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 5vmax;
+  
+  
+  
+}
+
+
+.divTextAbout{
+  width: 35vmax;
+  margin: 0 10px 10px 30px;
+
+  
+}
+
+
+
+
+.ImgAbout{
+  width: 25vmax;
+  border-radius: 15px;
+  border: 2px solid white;
+  filter: drop-shadow(0 0 5px black);
+
+}
+
+
+ h1 {
+ 
+  font-family: 'Patua One';
+  color: rgb(10, 10, 10);
+  font-size: 3vmax;
+  text-align: center;
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1, 5s; /* don't forget to set a duration! */
+ 
+}
+h6 {
+  font-family: 'Patua One';
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+font-size: 2vmax;
+ text-align: center;
+  animation: backInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1, 5s; /* don't forget to set a duration! */
+}
+
+p {
+  font-family: 'Yantramanav', sans-serif;
+  text-align: justify;
+  font-weight: bolder;
+  font-size: 1.5vmax;
+}
+
+#ImgAbout {
+  width: 30vmax;
+  margin: 20px 15px;
+  border-radius: 10px;
+}
+
+.buttonsobre {
+  text-align: center;
+}
+
+/**********************BOTÂO MAIN - SOBRE*****************/
+
+/* From uiverse.io by @DGtalsam */
+.custom-btn {
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-family: Verdana;
+}
+
+.btn {
+  background: linear-gradient(0deg, rgb(217, 255, 0) 0%, rgb(74, 185, 0) 100%);
+  line-height: 32px;
+  padding: 0;
+  border: none;
+  font-family: Verdana;
+}
+
+.btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn:before,
+.btn:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  background: rgba(251, 75, 2, 1);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn:hover {
+  color: rgba(251, 75, 2, 1);
+  background: transparent;
+}
+
+.btn:hover:before {
+  height: 100%;
+}
+
+.btn:hover:after {
+  width: 100%;
+}
+
+.btn span:before,
+.btn span:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background: rgba(251, 75, 2, 1);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn span:after {
+  height: 2px;
+  width: 0%;
+}
+
+.btn span:hover:before {
+  height: 100%;
+}
+
+.btn span:hover:after {
+  width: 100%;
+}
+
+/********************************8*SECTION VIDEOS*********************************/
+.SectionVideos{
+
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+
+
+}
+
+iframe{
+border-color: 2px solid white;
+
+
+
+}
+
+
+
+
+/***************************************************FOOTER**************************/
+
+#Footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 15vmax;
+  color: rgb(255, 255, 255);
+  background-color: rgb(31, 33, 37);
+  box-shadow: inset 0 0px 5px black;
+}
+
+footer p {
+  font-size: 1.2vmax;
+}
+
+.Maps {
+  border-radius: 5px;
+  border: 2px solid white;
+  width: 15vmax;
+  height: 10vmax;
+}
+.LogoFooter {
+  width: 12vmax;
+}
+
+.DivEndFooter {
+}
+
+.DivContatoFooter {
+  margin: 0;
+  padding: 0;
+}
+
+/*********************SECTION FACEBOOK***************/
+#Facebook {
+  padding: 0;
+  margin: 0;
+}
+
+/*****************SCROLL BAR***************************/
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 1px 5px rgb(90, 90, 90);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(21, 177, 0);
+  border-radius: 5px;
+}
+
+/*****************************HOVERS******************/

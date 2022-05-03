@@ -5,18 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Mente MX</title>
-    <link rel="icon" href="./IMG e LOGOS/Logo Capacete.png" />
+    <link rel="icon" href="./IMGLOGOS/Logo Capacete.png" />
 
     <!------- LINK BOOTSTRAP ------->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--LINK STYLE CSS-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleindex.css" />
 
     <!--Google FontS-->
     <!-- FONT 1 - PATUA-->
@@ -53,7 +48,7 @@
 
   </head>
 
-  <body class=" px-0">
+  <body>
     <!--------------LINK PARA INCLUIR PAGINA DO FACEBOOK NO HTML--------------------->
     <div id="fb-root"></div>
     <script
@@ -68,12 +63,12 @@
     <header>
       <div class="container-fluid px-0"id="DivNav">
         <nav
-          class="navbar navbar-expand-lg navbar-dark bg-dark"
+          class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
           id="HeaderContainer"
         >
           <div class="container">
             <a class="navbar-brand logomenu" href="./index.html">
-              <img src="./IMGLOGOS/Logo Capacete.png" alt="" width="150px" />
+              <img src="./IMGLOGOS/Logo Capacete.png" alt="" width="100px" />
             </a>
           </div>
 
@@ -88,12 +83,26 @@
               aria-label="Toggle navigation"
             ></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#SectionSobre"
+                  <a class="nav-link" aria-current="page" href="./index.html"
+                    >Home</a
+                  >
+                </li>
+
+             
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="about.html"
                     >Sobre</a
                   >
                 </li>
+
+
+
+
+
+                
                 <!---
  <li class="nav-item dropdown">
                   <a
@@ -123,13 +132,15 @@
                   >
                 </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#SectionTreinamento">Mentoria</a>
-                </li>
-
-                <li class="nav-item">
+                           <li class="nav-item">
                   <a class="nav-link" href="#">Loja Virtual</a>
                 </li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Depoimentos</a>
+                </li>
+
 
                 <li class="nav-item">
                   <a class="nav-link" href="#">FAQ</a>
@@ -146,7 +157,7 @@
     </header>
 
     <!------------------ MAIN IMAGEM LOGO com fade --------------->
-    <section class="container-fluid main  px-0">
+    <section class="container-fluid main px-0 mt-5">
       <div>
         <img
           class="MAINLOGO"
@@ -157,324 +168,285 @@
       </div>
     </section>
 
-    <!------------------ SOBRE   / COMO FUNCIONA --------------->
-    <section class="container-fluid SectionSobre  px-0" id="SectionSobre">
-      <div class="DivTextoSobre">
-        <h1>A nova mentalidade do MX</h1>
-        <br>
-        <h2>
-          O 1º Programa de Preparação Mental para Pilotos do Motociclismo
-          OffRoad.
-        </h2>
-        <br />
-        <p>
-          O Mente MX é um Programa de Preparação Mental mais completo do
-          universo do motociclismo off road.
-          <br />
-          Nossa metodologia única de Treinamento e Mentoria, já ajudou diversos
-          Pilotos, Pais e Equipes. Podemos chamar de "A Nova Mentalidade do MX",
-          Mente MX já é uma realidade e está na cabeça dos pilotos praticantes
-          do Motociclismo Off Road.
-        </p>
-
-        <div style="text-align: center; padding-top: 10px">
-          <a href="#">
-            <button class="custom-btn btn"><span>Saiba Mais!</span></button>
-          </a>
-        </div>
-      </div>
-
-      <div class="IMGSobre">
-        <img
-          src="https://mentemx.com.br/wp-content/uploads/2021/03/mente-mx-quem-somos-imagem.jpg"
-          alt=""
-          id="IMGSobre"
-        />
-      </div>
-    </section>
 
 
+<!------------------ SOBRE   / COMO FUNCIONA --------------->
+<section class="SectionSobre  px-0" id="SectionSobre">
+  <div class="DivTextoSobre">
 
-    <!---------------------MENTE MX ONLINE------------------------->
-    <section class="container-fluid SectionPlataforma  px-0" id="SectionPlataforma">
+    <a href="./about.html" style="text-decoration:none;">
+          <h1>A nova mentalidade do
+      <br>
+
+      Mundo Off-Road</h1>
+    </a>
+
+    <br>
+    <h6>
+      MenteMX
+    </h6>
+    <h6>
+      O 1º Programa de Preparação Mental 
+  
+      para Pilotos do Motociclismo
+
+      Off-Road.
+    </h6>
+ 
+
+    <div class="buttonsobre">
+      <a href="./about.html">
+        <button class="custom-btn btn"><span>Saiba Mais!</span></button>
+      </a>
+    </div>
+  </div>
+
+
+    <iframe width="400" height="270" src="https://www.youtube.com/embed/G5zsJirIhg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ 
+</section>
+
+
+
+ <!---------------------MENTE MX ONLINE------------------------->
+ <section class="container-fluid SectionPlataforma  px-0" id="SectionPlataforma">
       
-      <div class="IMGPlataforma">
-        <img
-          src="./IMGLOGOS/card2 mentemxonline 1.1.png"
-          alt=""
-          id="IMGPlataforma"
-        />
-      </div>
+  <div class="IMGPlataforma">
+<a href="./mentemxonline.html">
+ 
+    <img
+      src="./IMGLOGOS/card2 mentemxonline.png"
+      alt=""
+      id="IMGPlataforma"
+    />
+</a>
+
+
+  </div>
 
 
 
-      <div class="DivTextoPlataforma">
-        
-        <h1>MENTE MX Online</h1>
-        
-        <h2>
-          Agora ficou fácil você aprimorar suas técnicas!
-          Chegou o MenteMX Online, o curso online de mentoria para Pilotos OffRoad. Aulas gravadas, conteúdos exclusivos, acesse em qualquer lugar!
-        </h2>
-
-        <div style="text-align: center; padding-top: 20px">
-          <a href="./mentemxonline.html">
-            <button class="custom-btn btn"><span>Saiba Mais</span></button>
-          </a>
-        </div>
-      </div>
-
-    </section>
-
-    <!------------------ SECTION - GRID HABILIDADES -------------------->
-
-    <section class="container-fluid SectionTreinamento  px-0" id="SectionTreinamento">
-     
-      <div class="DivSectionTreinamento">
-        <h1 class="h1treinamento">
-          O que o <span class="Mente">Mente</span>
-          <span class="MX">MX</span> possibilita a você?
-        </h1>
-
-        <div class="row row-cols-1 row-cols-md-3 g-1">
-          
-          <div class="col colgrid">
-            <div class="card gridtreinamento">
-              <img
-                src="https://img.icons8.com/stickers/100/000000/report-card.png"
-                class="card-img-top icongrid"
-                alt="..."
-              />
-              <div class="card-body gridtext">
-                <h5 class="card-title h5gridtitle">Disciplina</h5>
-                <p class="card-text">
-                                  </p>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="col colgrid">
-            <div class="card gridtreinamento">
-              <img
-                src="https://img.icons8.com/stickers/100/000000/define-location.png"
-                class="card-img-top icongrid"
-                alt="..."
-              />
-              <div class="card-body gridtext">
-                <h5 class="card-title h5gridtitle">Foco</h5>
-                <p class="card-text">
-                 
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="col colgrid">
-            <div class="card gridtreinamento">
-              <img
-                src="https://img.icons8.com/stickers/100/000000/goal.png"
-                class="card-img-top icongrid"
-                alt="..."
-              />
-              <div class="card-body gridtext">
-                <h5 class="card-title h5gridtitle">Concentração</h5>
-                <p class="card-text">
-                 
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col colgrid">
-            <div class="card gridtreinamento">
-              <img
-                src="https://img.icons8.com/stickers/100/000000/combo-chart.png"
-                class="card-img-top icongrid"
-                alt="..."
-              />
-
-              <div class="card-body gridtext">
-                <h5 class="card-title h5gridtitle">Resiliência</h5>
-                <p class="card-text">
-                  
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col colgrid">
-            <div class="card gridtreinamento">
-              <img
-                src=" https://img.icons8.com/stickers/100/000000/tasks.png"
-                class="card-img-top icongrid"
-                alt="..."
-              />
-              <div class="card-body gridtext">
-                <h5 class="card-title h5gridtitle">Autocontrole</h5>
-                <p class="card-text">
-                  
-                </p>
-              </div>
-            </div>
-          </div>
-
-         
-
-          <div class="col colgrid">
-            <div class="card gridtreinamento">
-              <img
-                src="https://img.icons8.com/stickers/100/000000/trophy.png"
-                class="card-img-top icongrid"
-                alt="..."
-              />
-              <div class="card-body gridtext">
-                <h5 class="card-title h5gridtitle">Coragem</h5>
-                <p class="card-text">
-                  
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h3 class="h3treinamento">E aí, bora pra cima?</h3>
-      </div>
-    </section>
-
-    <!------------------ SECTION MATERIA 1 -------------------->
-    <section class="container-fluid SectionMateria1  px-0"></section>
-
-    <!------------INSTAGRAM PAGE ATRAVES DO SITE WOXO------------------->
-    <section class="container-fluid px-0" id="Instagram">
-      <div
-        class="INSTRAGRAM"
-        data-mc-src="9be49add-f3ff-4f75-94f1-994178625395#instagram"
-      ></div>
-      <script
-        src="https://cdn2.woxo.tech/a.js#6261ccc24ce29e002fb4d8cb"
-        async
-        data-usrc
-      ></script>
-    </section>
-
+  <div class="DivTextoPlataforma">
     
-    <!------------------ SECTION MATERIA PILOTOS -------------------->
+    <h1>MENTE MX Online</h1>
+    
+    <h2>
+      Agora ficou fácil você aprimorar suas técnicas!
+      Chegou o <span style="color:rgb(0, 196, 0)">MenteMX Online</span>, o curso online de mentoria para Pilotos Off-Road. Aulas gravadas, conteúdos exclusivos, acesse de qualquer lugar!
+    </h2>
 
-    <section class="container-fluid SectionPilotos  px-0">
-      <div>
-        <a href="https://www.instagram.com/lucasdunka34/">
-          <img
-            class="piloto"
-            src="https://www.honda.com.br/motos/racing/sites/racing/files/2021-01/LucasDunka_HondaRacing2020_BrasileiroMotocross_Etapa1_Credito_IdarioCafe__MundoPress_3439_1.jpg"
-            alt=""
-            title="Lucas Dunka"
-          />
-        </a>
-      </div>
+    <div style="text-align: center; padding-top: 20px">
+      <a href="./mentemxonline.html">
+        <button class="custom-btn btn"><span>Saiba Mais</span></button>
+      </a>
+    </div>
+  </div>
 
-      <div>
-        <a href="https://www.instagram.com/garmichelgiehl_4/">
-          <img
-            class="piloto"
-            src="https://www.mx1.com.br/storage/blog/content/EGds_garmichael-giehl-brasileiro-de-motocross-2020-final-mx1.jpg"
-            alt=""
-            title="Garmichel Ghiel"
-          />
-        </a>
-      </div>
+</section>
 
-      <div>
-        <a href="https://www.instagram.com/jean.ramos10/">
-          <img
-            class="piloto"
-            src="https://gaiamx.com.br/blog/wp-content/uploads/2019/02/motobatt-motomagazine-mxf-Recuperado.png"
-            alt=""
-            title="Jean Ramos"
-          />
-        </a>
-      </div>
-    </section>
 
-    <!------------------ SECTION CONTATO -------------------->
 
-    <section class="container-fluid SectionContato  px-0" id="SectionContato">
-      <div class="um-form">
-        <div class="DivContato">
-          <h5>ENDEREÇO</h5>
-          <p>
-            Rua Dr. João Colin, 1285
-            <br />
-            Bairro América, Joinville/ SC
-            <br />
-            CEP: 89204-001
-          </p>
-        </div>
+  <!------------------ SECTION - GRID HABILIDADES -------------------->
 
-        <div  class="DivContato">
-          <p>
-            TELEFONE: (47) 99172-6582
-            <br />
-            E-MAIL: mentemxnapratica@gmail.com
-          </p>
-        </div>
-      </div>
+  <section class="container-fluid SectionTreinamento  px-0" id="SectionTreinamento">
+     
+    <div class="DivSectionTreinamento px-0">
+      <h1>
+        O que o <span class="Mente">Mente</span>
+        <span class="MX">MX</span> possibilita a você?
+      </h1>
 
-      <div class="dois-form">
-        <form action="mailto: mentemxnapratica@gmail.com" method="post" class="formulariocontato">
-          <div class="DivContato">
-            <div class="mb-1">
-              <input
-                type="text"
-                class="form-control formulariocontato"
-                id="exampleFormControlInput1"
-                placeholder="Nome"
-                required="required"
-              />
+      <div class="row row-cols-1 row-cols-md-3 g-1 px-0 DivGridTreinamento">
+                <div class="col colgrid">
+          <div class="card gridtreinamento">
+            <img
+              src="./IMGLOGOS/icons/icons8-boletim-100.png"
+              class="card-img-top icongrid"
+              alt="..."
+            />
+            <div class="card-body gridtext">
+              <h5 class="card-title h5gridtitle">Disciplina</h5>
+              <p class="card-text">
+                                </p>
             </div>
-
-            <div class="mb-1">
-              <input
-                type="email"
-                class="form-control formulariocontato"
-                id="exampleFormControlInput1"
-                placeholder="Email"
-                required="required"
-              />
-            </div>
-
-            <div class="mb-1">
-              <input
-                type="tel"
-                class="form-control formulariocontato"
-                id="exampleFormControlInput1"
-                placeholder="Telefone"
-                required="required"
-              />
-            </div>
-
-            <div class="mb-1">
-              <textarea
-                class="form-control formulariocontato"
-                id="exampleFormControlTextarea1"
-                rows="3"
-                placeholder="Deixe aqui a sua mensagem"
-              ></textarea>
-            </div>
-
-            <a href="mailto:mentemxnapratica@gmail.com">
-              <input type="submit" value="Enviar" />
-            </a>
           </div>
-        </form>
-      </div>
-    </section>
+        </div>
 
-    <!----------------------------------------FOOTER------------------------------->
+
+
+        <div class="col colgrid">
+          <div class="card gridtreinamento">
+            <img
+              src="./IMGLOGOS/icons/icons8-atirador-de-elite-100.png"
+              class="card-img-top icongrid"
+              alt="..."
+            />
+            <div class="card-body gridtext">
+              <h5 class="card-title h5gridtitle">Foco</h5>
+              <p class="card-text">
+               
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col colgrid">
+          <div class="card gridtreinamento">
+            <img
+              src="./IMGLOGOS/icons/icons8-objetivo-100.png"
+              class="card-img-top icongrid"
+              alt="..."
+            />
+            <div class="card-body gridtext">
+              <h5 class="card-title h5gridtitle">Concentração</h5>
+              <p class="card-text">
+               
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col colgrid">
+          <div class="card gridtreinamento">
+            <img
+              src="./IMGLOGOS/icons/icons8-gráfico-combinado-100.png"
+              class="card-img-top icongrid"
+              alt="..."
+            />
+
+            <div class="card-body gridtext">
+              <h5 class="card-title h5gridtitle">Resiliência</h5>
+              <p class="card-text">
+                
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col colgrid">
+          <div class="card gridtreinamento">
+            <img
+              src="./IMGLOGOS/icons/icons8-tarefas-100.png"
+              class="card-img-top icongrid"
+              alt="..."
+            />
+            <div class="card-body gridtext">
+              <h5 class="card-title h5gridtitle">Autocontrole</h5>
+              <p class="card-text">
+                
+              </p>
+            </div>
+          </div>
+        </div>
+
+       
+
+        <div class="col colgrid">
+          <div class="card gridtreinamento">
+            <img
+              src="./IMGLOGOS/icons/icons8-troféu-100.png"
+              class="card-img-top icongrid"
+              alt="..."
+            />
+            <div class="card-body gridtext">
+              <h5 class="card-title h5gridtitle">Coragem</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <h3>E aí, bora pra cima?</h3>
+    </div>
+  </section>
+
+
+
+<!------------INSTAGRAM PAGE ATRAVES DO SITE WOXO------------------->
+<section id="Instagram">
+  <div
+    class="INSTRAGRAM"
+    data-mc-src="9be49add-f3ff-4f75-94f1-994178625395#instagram"
+  ></div>
+  <script
+    src="https://cdn2.woxo.tech/a.js#6261ccc24ce29e002fb4d8cb"
+    async
+    data-usrc
+  ></script>
+</section>
+
+   <!----------------------------------------RIDERS------------------------------->
+
+
+<section style="background-color: black; padding-top: 20px;">
+  <h1 style="color: white; filter: drop-shadow(0 0 5px greenyellow); text-align: center;margin-bottom: 20px;">Nosso Time de Riders</h1>
+
+<div class="riders">
+
+  <div>
+    <div class="card-rider">
+      <img class="card-img-top" src="./IMGLOGOS/fred spagnol.png" alt="Card image cap" >
+      <div class="card-body">
+        <h5 class="card-title">Frederico Spagnol #61
+          
+          <br>
+          (Motocross)</h5>
+        <p class="card-text">4x Campeão Paulista de Motocross
+          <br>
+          2x Vice Campeão Brasileiro de Motocross
+         </p>
+         </div>
+    </div>
+
+
+    <div>
+      <div class="card-rider">
+        <img class="card-img-top" src="./IMGLOGOS/otavio pedro.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Otávio Pedro #12
+            <br>
+            (Motocross/Velocross)</h5>
+          <p class="card-text">Campeão Paulista de Motocross
+            <br>
+            4x Vice Campeão Paranaense de Motocross
+            <br>
+            Campeão Arena Velocross
+            <br>
+            2x Campeão Paranaense de Velocross
+            <br>
+            Campeão Sul Brasileiro de Velocross
+           </p>
+         </div>
+      </div>
+
+      <div class="divcard">
+        <div class="card-rider">
+          <img class="card-img-top" src="./IMGLOGOS/./garmichel1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Vanderlei Souza Júnior #84
+              
+              <br>
+              (Motocross)</h5>
+            <p class="card-text">3x Campeão Catarinense de Motocross.</p>
+         </div>
+        </div>
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+   <!----------------------------------------FOOTER------------------------------->
     <footer class="container-fluid  px-0" id="Footer">
       <div>
         <img

@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#HeaderContainer {
+  box-shadow: 0px 0px 10px black;
+}
+
+/************************** PAGINA MAIN PLATAFORMA *************************/
+
+.SectionMainPlataforma {
+  background-image: url(./IMGLOGOS/main-grid-1-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 5px 5px black;
+}
+
+
+
+.div1MainPlataforma1 {
+  background-image: url(./IMGLOGOS/672449.jpg);
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+ 
+  
+ }
+
+
+ .ImgMainPlataforma1{
+margin-top: 30px;
+width: 50vmax;
+filter: drop-shadow(0 0 10px white);
+
+animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+
+ }
+
+
+.ImgMainPlataforma2 {
+  margin: 20px;
+  width: 40vmax;
+  height: auto;
+  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+
+  border-radius: 10px;
+}
+
+
+.ImgMainPlataforma2:hover {
+  transition: 0.6s;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  border: 1px solid greenyellow;
+  border-radius: 10px;
+}
+
+
+
+
+
+.ImgMainPlataforma {
+  margin: 20px;
+  width: 40vw;
+  height: auto;
+
+  border-radius: 10px;
+}
+
+
+
+/*****************************************************************************/
+
+.SectionMainTexto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 40px;
+
+ background-color: white;
+box-shadow: inset 0 0 10px black;
+  background-position: center;
+  background-attachment: fixed;
+ }
+
+.divMainTexto {
+
+}
+
+.Texto1MainPlataforma {
+  margin: 30px 0;
+  box-sizing: border-box;
+   width: 45vmax;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.897);
+  border: 1px solid rgb(255, 255, 255);
+
+  border-radius: 10px;
+
+}
+
+.Texto1MainPlataforma:hover {
+  transition: 0.6s;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  border: 1px solid greenyellow;
+  border-radius: 10px;
+}
+
+.h3MainPlataforma {
+  padding-top: 12px;
+  padding-left: 12px;
+  font-family: 'Patua One', cursive;
+  font-size: 35px;
+}
+
+
+.h4MainPlataforma {
+  padding-top: 12px;
+  padding-left: 12px;
+  font-family: 'Patua One', cursive;
+  font-size: 30px;
+}
+
+.pMainPlataforma {
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: justify;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+/******************************BOTAO PLATAFORMA************************************/
+
+/* From uiverse.io by @DGtalsam */
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn {
+  background: linear-gradient(0deg, rgb(217, 255, 0) 0%, rgb(74, 185, 0) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn:before,
+.btn:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  background: rgba(251, 75, 2, 1);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn:hover {
+  color: rgba(251, 75, 2, 1);
+  background: transparent;
+}
+
+.btn:hover:before {
+  height: 100%;
+}
+
+.btn:hover:after {
+  width: 100%;
+}
+
+.btn span:before,
+.btn span:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background: rgba(251, 75, 2, 1);
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn span:after {
+  height: 2px;
+  width: 0%;
+}
+
+.btn span:hover:before {
+  height: 100%;
+}
+
+.btn span:hover:after {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/***************************SECTION CARDS PLATAFORMA*********************************************************/
+.SectionCardsPlataforma {
+  background-image: url(./IMGLOGOS/672449.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 1px solid greenyellow;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+
+padding: 40px;
+
+}
+
+/*
+
+https://i0.wp.com/astro.uni-frankfurt.de/wp-content/uploads/2014/01/iron_texture1049-1.jpg?w=1380
+
+*/
+.divCardsPlataforma {
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.493);
+  background-image: url(./IMGLOGOS/mud.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/***************************************   SAIBAMAIS     ********************************************/
+
+.divSaibaMais {
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.493);
+  padding-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.SaibaMais {
+  background-image: url(https://i0.wp.com/astro.uni-frankfurt.de/wp-content/uploads/2014/01/iron_texture1049-1.jpg?w=1380);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.ImgSaibaMais {
+  width: 30vmax;
+}
+
+/**************************************       PRICE CARDS          *************************/
+.pricecards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-image: url(./IMGLOGOS/main-grid-1-2.jpg);
+}
+
+.pricecard1 {
+  border-radius: 20px;
+  background-color: rgba(255, 68, 0, 0.945);
+  margin: 20px;
+  font-size: 1.2vmax;
+  filter: drop-shadow(0 0 5px rgb(255, 115, 0));
+  padding: 3px 3px;
+  width: 35vw;
+}
+
+.pricecard2 {
+  border-radius: 20px;
+  background-color: rgba(28, 212, 4, 0.918);
+  margin: 20px;
+  font-size: 1.2vmax;
+  filter: drop-shadow(0 0 5px greenyellow);
+  width: 35vw;
+  padding: 3px 3px;
+}
+
+.liprice1 {
+  background-color: white;
+  margin: 2px 5px;
+  padding: 0 10px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.liprice2 {
+  background-color: rgb(241, 241, 241);
+  margin: 0 5px;
+  padding: 0 10px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.liprice3 {
+  background-color: rgb(107, 107, 107);
+  margin: 0 5px;
+  padding: 0 10px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.liprice4 {
+  background-color: rgb(107, 107, 107);
+  margin: 0 5px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+/**************************************       FOOTER          **************************/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 15vmax;
+  color: rgb(255, 255, 255);
+  background-color: rgb(31, 33, 37);
+}
+
+footer p {
+  font-size: 1.2vmax;
+}
+
+.Maps {
+  border-radius: 5px;
+  border: 2px solid white;
+  margin: 5px 0 5px 5px;
+  width: 15vmax;
+  height: 10vmax;
+}
+.LogoFooter {
+  width: 12vmax;
+}
+
+.DivContatoFooter {
+  margin: 0;
+  padding: 0;
+}
+
+.facebookbox {
+  width: 20vmax;
+}
+
+
+
+
+/*****************SCROLL BAR***************************/
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 1px 5px rgb(90, 90, 90);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(21, 177, 0);
+  border-radius: 5px;
+}

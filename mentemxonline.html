@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Mente MX</title>
-    <link rel="icon" href="./IMG e LOGOS/Logo Capacete.png" />
+    <link rel="icon" href="./IMGLOGOS/Logo Capacete.png" />
 
     <!------- LINK BOOTSTRAP ------->
     <link
@@ -16,7 +16,7 @@
     />
 
     <!--LINK STYLE CSS-->
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="stylementemxonline.css" />
 
     <!--Google FontS-->
     <!-- FONT 1 - PATUA-->
@@ -26,15 +26,23 @@
       href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
       rel="stylesheet"
     />
-  </head>
 
-  <!-- FONT 2 - YANTRAMANAV-->
+      <!-- FONT 2 - YANTRAMANAV-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Yantramanav&display=swap"
     rel="stylesheet"
   />
+
+<!-----------------LINK PARA ANIMAÇÕES---------------->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+  </head>
+
 
   <body>
     
@@ -48,21 +56,20 @@
        nonce="kToPI9Lh"
      ></script>
 
-
-    <header>
-      <div id="DivNav">
+<!-----------------------------------MENU CABEÇALHO------------------------------->
+     <header>
+      <div class="container-fluid px-0"id="DivNav">
         <nav
-          class="navbar navbar-expand-lg navbar-dark bg-dark"
+          class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
           id="HeaderContainer"
         >
-         
-        <div class="container container-fluid px-0">
-          <a class="navbar-brand" href="./index.html">
-            <img src="./IMGLOGOS/Logo Capacete.png" alt="" width="150px" />
-          </a>
-        </div>
+          <div class="container">
+            <a class="navbar-brand logomenu" href="./index.html">
+              <img src="./IMGLOGOS/Logo Capacete.png" alt="" width="100px" />
+            </a>
+          </div>
 
-          <div class="container-fluid px-0">
+          <div class="container-fluid">
             <button
               class="navbar-toggler"
               type="button"
@@ -73,12 +80,26 @@
               aria-label="Toggle navigation"
             ></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="./index.html"
                     >Home</a
                   >
                 </li>
+
+              
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="about.html"
+                    >Sobre</a
+                  >
+                </li>
+
+
+
+
+
+                
                 <!---
  <li class="nav-item dropdown">
                   <a
@@ -103,16 +124,20 @@
 -->
 
                 <li class="nav-item">
-                  <a class="nav-link" href="./mentemxonline.html">MenteMX Online</a>
+                  <a class="nav-link mtmxonlin" href="./mentemxonline.html"
+                    >MenteMX Online</a
+                  >
                 </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="#SectionTreinamento">Habilidades</a>
-                </li>
-
-                <li class="nav-item">
+                           <li class="nav-item">
                   <a class="nav-link" href="#">Loja Virtual</a>
                 </li>
+
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Depoimentos</a>
+                </li>
+
 
                 <li class="nav-item">
                   <a class="nav-link" href="#">FAQ</a>
@@ -127,28 +152,35 @@
         </nav>
       </div>
     </header>
+
 <!-------------------SECTIONS MAIN PLATAFORMA ONLINE------------------------------>
 
+<div class="div1MainPlataforma1 mt-5 px-0">
+  <img
+    class="ImgMainPlataforma1"
+    src="./IMGLOGOS/50__OFF-removebg-preview.png"
+    alt=""
+  />
+</div>
 
-<section class="SectionMainPlataforma">
+<section class="SectionMainTexto">
+
   <div>
     <img
-      class="ImgMainPlataforma"
+      class="ImgMainPlataforma2"
       src="./IMGLOGOS/card2 mentemxonline.png"
       alt=""
     />
   </div>
-  </section>
 
-<section class="SectionMainTexto">
+
+
   <div class="divMainTexto">
     <div class="Texto1MainPlataforma">
       <h3 class="h3MainPlataforma">
-        MenteMX Online
-        <br />
-        A Plataforma mais <br />
-        completa do Universo Off Road!
-      </h3>
+        MenteMX Online</h3>
+
+        <h4 class="h4MainPlataforma">A Plataforma mais completa do Universo Off Road!</h4>
 
       <br />
       <p class="pMainPlataforma">
@@ -162,105 +194,116 @@
   </div>
 </section>
 
-<section class="SectionMainPlataforma">
-  <div>
-    <img
-      class="ImgMainPlataforma"
-      src="./IMGLOGOS/card1 mentemxonline.jpg"
-      alt=""
-    />
-  </div>
-</section>
 
 
     <!------------------------------SECTION CARDS PLATAFORMA----------------------->
     <section class="SectionCardsPlataforma">
-      <div class="divCardsPlataforma">
-        <div class="center">
-          <div class="property-card property-card1">
-            <a href="#">
-              <div class="property-image1">
-                <div class="property-image-title">
-                  <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                </div>
-              </div></a
-            >
-            <div class="property-description">
-              <h5 class="h5cardplataforma">1º Passo</h5>
-              <p class="pcardplataforma">
-                Após realizar a inscrição, você receberá um email com o login e
-                senha.
-              </p>
-            </div>
-            <a href="#">
-              <div class="property-social-icons">
-                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
 
-              </div>
-            </a>
-          </div>
+      <div class="card" style="width: 18rem;margin: 10px;">
+        <img class="card-img-top" src="./IMGLOGOS/card2 mentemxonline.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">1º Passo</h5>
+          <p class="card-text">Faça sua inscrição.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
+      </div>
 
-        <div class="center">
-          <div class="property-card property-card2">
-            <a href="#">
-              <div class="property-image2">
-                <div class="property-image-title">
-                  <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                </div>
-              </div></a
-            >
-            <div class="property-description">
-              <h5 class="h5cardplataforma">2º Passo</h5>
-              <p class="pcardplataforma">Inicie a sua jornada</p>
-            </div>
-            <a href="#">
-              <div class="property-social-icons">
-                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-              </div>
-            </a>
-          </div>
+      <div class="card" style="width: 18rem;margin: 10px;">
+        <img class="card-img-top" src="./IMGLOGOS/card1 mentemxonline.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">2º Passo</h5>
+          <p class="card-text">Após realizar sua inscrição, você irá receber um email contendo login e senha.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
+      </div>
 
-        <div class="center">
-          <div class="property-card property-card3">
-            <a href="#">
-              <div class="property-image3">
-                <div class="property-image-title">
-                  <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                </div>
-              </div></a
-            >
-            <div class="property-description">
-              <h5 class="h5cardplataforma">3º Passo</h5>
-              <p class="pcardplataforma">
-                Colocar em prática tudo o que aprender
-              </p>
-            </div>
-            <a href="#">
-              <div class="property-social-icons">
-                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-              </div>
-            </a>
-          </div>
+
+      <div class="card" style="width: 18rem;margin: 10px;">
+        <img class="card-img-top" src="./IMGLOGOS/trainer mtx.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">3º Passo</h5>
+          <p class="card-text">Inicie sua jornada e coloque em prática tudo o que aprender.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
     </section>
   
 
-  
-    <div style="text-align: center; padding-top: 20px" class="SaibaMais">
-          
-      <div class="divSaibaMais">
-      <a href="https://checkout.mycheckout.com.br/checkout/623bbb39097e4d0b3eb2c08c">
-        <img class="ImgSaibaMais" src="./IMGLOGOS/card2 mentemxonline.png" alt="">
-      </a>
-    </div>
-    </div>
+
+<!------------------------------SECTION PRICE CARDS PLATAFORMA----------------------->
+
+
+
+<section class="pricecards">
 
 
 
 
+<div class="card pricecard1">
+  <img class="card-img-top"  style="border-top-left-radius: 20px; border-top-right-radius: 20px; padding: 5px 5px;" src="./IMGLOGOS/PLANO MENSAL 2.png" alt="Imagem de capa do card">
+   <ul class="list-group list-group-flush">
+    <li class="list-group-item liprice1">Acesso a Todo o Conteúdo</li>
+    <li class="list-group-item liprice2">Técnicas e estratégias mentais</li>
+    <li class="list-group-item liprice1">Premiações</li>
+    <li class="list-group-item liprice2">Materiais de Apoio</li>
+    <li class="list-group-item liprice1">Acesso ao grupo fechado</li>
+    <li class="list-group-item liprice2">Descontos em produtos da loja</li>
+    <li class="list-group-item liprice1">Acesso em treinamentos, palestras e eventos oficiais</li>
+    <li class="list-group-item liprice3"> <del>+20% de desconto para ingressar como membro em nosso grupo de mentoria</del></li>
+    <li class="list-group-item liprice4"> <del>O ingresso do piloto no grupo de mentoria será mediante análise</del></li>
+
+
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">
+      <button class="custom-btn btn"><span>Saiba Mais!</span></button>
+
+
+    </a>
+     </div>
+</div>
+
+
+
+
+
+
+
+<div class="card pricecard2">
+  <img class="card-img-top" style="border-top-left-radius: 20px; border-top-right-radius: 20px; padding: 5px 5px;" src="./IMGLOGOS/PLANO ANUAL 2.png" alt="Imagem de capa do card">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item liprice1">Acesso a Todo o Conteúdo</li>
+    <li class="list-group-item liprice2">Técnicas e estratégias mentais</li>
+    <li class="list-group-item liprice1">Premiações</li>
+    <li class="list-group-item liprice2">Materiais de Apoio</li>
+    <li class="list-group-item liprice1">Acesso ao grupo fechado</li>
+    <li class="list-group-item liprice2">Descontos em produtos da loja</li>
+    <li class="list-group-item liprice1">Acesso em treinamentos, palestras e eventos oficiais</li>
+    <li class="list-group-item liprice2">+20% de desconto para ingressar como membro em nosso grupo de mentoria</li>
+    <li class="list-group-item liprice1">O ingresso do piloto no grupo de mentoria será mediante análise</li>
+
+
+  </ul>
+  <div class="card-body">
+      <button class="custom-btn btn"><span>Saiba Mais!</span></button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
 
     <!------------------FOOTER---------------------->
     <footer class="container-fluid" id="Footer">
@@ -282,21 +325,7 @@
         </p>
       </div>
 
-      <div class="facebookbox">
-        <!--FACEBOOK PAGE NO -->
-        <div
-          class="fb-page"
-          id="Facebook"
-          data-href="https://www.facebook.com/mentemxoficial"
-          data-width="180"
-          data-hide-cover="false"
-          data-show-facepile="false"
-        ></div>
-      </div>
-
-
-
-        
+           
       <div class="divMaps">
         <iframe
           class="Maps"
