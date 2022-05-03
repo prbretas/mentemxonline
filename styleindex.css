@@ -30,7 +30,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-image: url(./IMGLOGOS/Capa\ Background\ Site.jpg);
+  background-image: url(./Capa\ Background\ Site.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom left;
@@ -129,7 +129,7 @@ body {
 .SectionPlataforma {
   border-top: 10px solid rgb(0, 0, 0);
   background-color: rgb(95, 95, 95);
-  background-image: url(./IMGLOGOS/main-grid-1-2.jpg);
+  background-image: url(./main-grid-1-2.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -286,7 +286,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(0, 0, 0);
-  background-image: url(./IMGLOGOS/grid\ 2\ background.webp);
+  background-image: url(./grid\ 2\ background.webp);
 
   background-position: center;
   background-repeat: no-repeat;
@@ -414,7 +414,7 @@ iframe {
   justify-content: space-evenly;
   align-items: center;
   height: 50vmax;
-  background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p2/2623338-black-and-green-modern-material-design-with-a-hexagonal-mesh-dark-metal-background-template-for-your-business-vector-abstract-widescreen-background-vetor.jpg);
+  background-image: url(./Capa\ Background\ Site.jpg);
   background-position: right;
   background-size: cover;
 }
@@ -453,56 +453,7 @@ border-radius: 10px;
 
 https://cdn.wallpapersafari.com/72/93/XZDcKS.jpg
 
-  */
-  background-image: url(https://cdn.wallpapersafari.com/72/93/XZDcKS.jpg);
-  flex-wrap: wrap;
-  padding: 20px 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
 
-.um-form {
-  background: linear-gradient(
-    0deg,
-    rgba(217, 255, 0, 0.336) 0%,
-    rgb(74, 185, 0) 100%
-  );
-
-  border-radius: 20px;
-  color: white;
-  box-shadow: 0 0 5px rgb(72, 255, 0);
-  width: 30vmax;
-  padding: 20px;
-  font-size: 1vmax;
-}
-
-.dois-form {
-  padding: 20px;
-  background: linear-gradient(
-    0deg,
-    rgba(217, 255, 0, 0.336) 0%,
-    rgb(74, 185, 0) 100%
-  );
-
-  border-radius: 20px;
-  color: white;
-  box-shadow: 0 0 5px rgb(72, 255, 0);
-
-  width: 40vmax;
-  margin: 10px;
-  font-size: 1vmax;
-}
-
-.DivContato {
-  font-size: 1.5vmax;
-}
-
-.formulariocontato {
-  font-size: 1.2vmax;
-}
-
-/**********SECTION PHOTO*************/
 
 /***************************************************FOOTER**************************/
 
