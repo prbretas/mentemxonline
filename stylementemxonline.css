@@ -12,7 +12,7 @@
 /************************** PAGINA MAIN PLATAFORMA *************************/
 
 .SectionMainPlataforma {
-  background-image: url(./main-grid-1-2.jpg);
+  background-image: url(./IMGLOGOS/main-grid-1-2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 
 
 .div1MainPlataforma1 {
-  background-image: url(./672449.jpg);
+  background-image: url(./IMGLOGOS/672449.jpg);
    display: flex;
    align-items: center;
    justify-content: space-evenly;
@@ -57,14 +57,14 @@ animation: bounceIn; /* referring directly to the animation's @keyframe declarat
   height: auto;
   animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
-
+  box-shadow: 0 0 10px rgb(0, 0, 0);
   border-radius: 10px;
 }
 
 
 .ImgMainPlataforma2:hover {
   transition: 0.6s;
-  box-shadow: 0 0 20px rgb(0, 0, 0);
+  box-shadow: 0 0 20px greenyellow;
   border: 1px solid greenyellow;
   border-radius: 10px;
 }
@@ -109,14 +109,14 @@ box-shadow: inset 0 0 10px black;
   color: white;
   background-color: rgba(0, 0, 0, 0.897);
   border: 1px solid rgb(255, 255, 255);
-
+  box-shadow: 0 0 10px black;
   border-radius: 10px;
 
 }
 
 .Texto1MainPlataforma:hover {
   transition: 0.6s;
-  box-shadow: 0 0 20px rgb(0, 0, 0);
+  box-shadow: 0 0 20px greenyellow;
   border: 1px solid greenyellow;
   border-radius: 10px;
 }
@@ -260,7 +260,7 @@ box-shadow: inset 0 0 10px black;
 
 /***************************SECTION CARDS PLATAFORMA*********************************************************/
 .SectionCardsPlataforma {
-  background-image: url(./672449.jpg);
+  background-image: url(./IMGLOGOS/672449.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -287,7 +287,7 @@ https://i0.wp.com/astro.uni-frankfurt.de/wp-content/uploads/2014/01/iron_texture
   align-items: center;
   justify-content: space-evenly;
   background-color: rgba(0, 0, 0, 0.493);
-  background-image: url(./mud.png);
+  background-image: url(./IMGLOGOS/mud.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -304,7 +304,7 @@ https://i0.wp.com/astro.uni-frankfurt.de/wp-content/uploads/2014/01/iron_texture
 }
 
 .SaibaMais {
-  background-image: url(./iron grid.png);
+  background-image: url(https://i0.wp.com/astro.uni-frankfurt.de/wp-content/uploads/2014/01/iron_texture1049-1.jpg?w=1380);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -314,13 +314,15 @@ https://i0.wp.com/astro.uni-frankfurt.de/wp-content/uploads/2014/01/iron_texture
   width: 30vmax;
 }
 
+
 /**************************************       PRICE CARDS          *************************/
-.pricecards {
+
+/*.pricecards {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background-image: url(./main-grid-1-2.jpg);
+  background-image: url(./IMGLOGOS/main-grid-1-2.jpg);
 }
 
 .pricecard1 {
@@ -380,6 +382,59 @@ https://i0.wp.com/astro.uni-frankfurt.de/wp-content/uploads/2014/01/iron_texture
 
 
 }
+
+*/
+
+/**************************************************************************/
+
+.pricecards2{
+  background-image: url(./IMGLOGOS/672449.jpg);
+
+
+background-color: black;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+
+
+}
+
+.priceimg{
+width: 20vmax;
+margin: 30px 0;
+border: 1px solid white;
+border-radius: 20px;
+filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+
+}
+
+
+.priceimg:hover{
+  border: 1px solid greenyellow;
+filter: drop-shadow(0 0 10px greenyellow);
+width: 20.4vmax;
+transition: 0.3s;
+
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**************************************       FOOTER          **************************/
 

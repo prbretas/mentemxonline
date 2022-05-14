@@ -30,7 +30,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-image: url(./Capa\ Background\ Site.jpg);
+  background-image: url(./IMGLOGOS/Capa\ Background\ Site.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom left;
@@ -129,7 +129,7 @@ body {
 .SectionPlataforma {
   border-top: 10px solid rgb(0, 0, 0);
   background-color: rgb(95, 95, 95);
-  background-image: url(./main-grid-1-2.jpg);
+  background-image: url(./IMGLOGOS/main-grid-1-2.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -286,7 +286,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(0, 0, 0);
-  background-image: url(./grid\ 2\ background.webp);
+  background-image: url(./IMGLOGOS/grid\ 2\ background.webp);
 
   background-position: center;
   background-repeat: no-repeat;
@@ -414,19 +414,25 @@ iframe {
   justify-content: space-evenly;
   align-items: center;
   height: 50vmax;
-  background-image: url(./Capa\ Background\ Site.jpg);
+  background-image: url(./IMGLOGOS/background-site.jpg);
   background-position: right;
   background-size: cover;
 }
 
 /***********************SECTION PILOTOS********************************/
 
+.SectionRiders{
+ 
+}
+
+
 .riders {
-  display: flex;
-  align-items: center;
+ 
+display: flex;
+align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 .divcard{
@@ -435,13 +441,37 @@ border-radius: 10px;
 }
 
 .card-rider {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   margin: 10px;
-  width:420px;
-  border: 10px solid greenyellow;
+  width:20vmax;
+  border: 10px solid rgb(248, 248, 248);
   border-radius: 10px;
+  text-shadow: 0 0 1px black;
+  filter: drop-shadow(0 0 4px rgb(255, 255, 255));
 
 }
+
+
+
+
+.card-img-top {
+width: 15vmax;
+margin: 1vmax 1vmax;
+border-radius: 10px;
+
+
+
+}
+
+.card-title {
+  font-size: 1.3vmax;
+
+}
+
+.card-text{
+  font-size: 1.1vmax;
+}
+
 
 /***********************SECTION CONTATO********************************/
 .SectionContato {
@@ -453,7 +483,56 @@ border-radius: 10px;
 
 https://cdn.wallpapersafari.com/72/93/XZDcKS.jpg
 
+  */
+  background-image: url(https://cdn.wallpapersafari.com/72/93/XZDcKS.jpg);
+  flex-wrap: wrap;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
+.um-form {
+  background: linear-gradient(
+    0deg,
+    rgba(217, 255, 0, 0.336) 0%,
+    rgb(74, 185, 0) 100%
+  );
+
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 0 5px rgb(72, 255, 0);
+  width: 30vmax;
+  padding: 20px;
+  font-size: 1vmax;
+}
+
+.dois-form {
+  padding: 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(217, 255, 0, 0.336) 0%,
+    rgb(74, 185, 0) 100%
+  );
+
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 0 5px rgb(72, 255, 0);
+
+  width: 40vmax;
+  margin: 10px;
+  font-size: 1vmax;
+}
+
+.DivContato {
+  font-size: 1.5vmax;
+}
+
+.formulariocontato {
+  font-size: 1.2vmax;
+}
+
+/**********SECTION PHOTO*************/
 
 /***************************************************FOOTER**************************/
 
@@ -476,12 +555,18 @@ footer p {
   border: 2px solid white;
   width: 15vmax;
   height: 10vmax;
+  filter: drop-shadow(0 0 2px greenyellow);
 }
 .LogoFooter {
-  width: 12vmax;
+  width: 10vmax;
+  filter: drop-shadow(0 0 2px greenyellow);
 }
 
 .DivEndFooter {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  
 }
 
 .DivContatoFooter {
