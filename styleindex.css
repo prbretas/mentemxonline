@@ -31,7 +31,6 @@ body {
   align-items: center;
   justify-content: space-evenly;
   background-image: url(./Capa\ Background\ Site.jpg);
-  background-attachment: fixed;
   background-size: cover;
   background-position: bottom left;
   height: 40vmax;
@@ -95,7 +94,6 @@ body {
   text-align: center;
   animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1, 5s; /* don't forget to set a duration! */
-  filter: drop-shadow(0 0 1px rgb(124, 124, 124));
 }
 .DivTextoSobre h6 {
   font-family: 'Yantramanav', sans-serif;
@@ -106,7 +104,6 @@ body {
   text-align: center;
   animation: backInRight; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1, 5s; /* don't forget to set a duration! */
-  filter: drop-shadow(0 0 1px rgb(124, 124, 124));
 }
 
 .DivTextoSobre p {
@@ -122,6 +119,7 @@ body {
 }
 
 .buttonsobre {
+  margin-top: 10px;
   text-align: center;
 }
 /************************** SECTION PLATAFORMA *************************/
@@ -303,15 +301,13 @@ body {
   border-top: 10px solid rgb(0, 0, 0);
 }
 
-
-.colgrid{
-text-align: center;
-
+.colgrid {
+  text-align: center;
 }
 
 .DivSectionTreinamento h1 {
   font-family: 'Patua One', cursive;
-    font-size: 3vmax;
+  font-size: 3vmax;
   color: white;
   padding: 30px 0;
 
@@ -403,7 +399,7 @@ iframe {
 /*********************SECTION INSTAGRAM***************/
 
 #Instagram {
- padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 /*********************SECTION MATERIA 2***************/
@@ -421,57 +417,47 @@ iframe {
 
 /***********************SECTION PILOTOS********************************/
 
-.SectionRiders{
- 
+.SectionRiders {
+  background-color: black;
+  padding-top: 20px;
 }
 
-
 .riders {
- 
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: rgb(0, 0, 0);
 }
 
-.divcard{
-border-radius: 10px;
-
+.divcard {
+  border-radius: 10px;
 }
 
 .card-rider {
   background-color: rgb(255, 255, 255);
   margin: 10px;
-  width:20vmax;
+  width: 25vmax;
+  margin: 5px 50px;
   border: 10px solid rgb(248, 248, 248);
   border-radius: 10px;
   text-shadow: 0 0 1px black;
   filter: drop-shadow(0 0 4px rgb(255, 255, 255));
-
 }
 
-
-
-
 .card-img-top {
-width: 15vmax;
-margin: 1vmax 1vmax;
-border-radius: 10px;
-
-
-
+  width: 20vmax;
+  margin: 1vmax 1vmax;
+  border-radius: 10px;
 }
 
 .card-title {
   font-size: 1.3vmax;
-
 }
 
-.card-text{
+.card-text {
   font-size: 1.1vmax;
 }
-
 
 /***********************SECTION CONTATO********************************/
 .SectionContato {
@@ -547,7 +533,7 @@ https://cdn.wallpapersafari.com/72/93/XZDcKS.jpg
 }
 
 footer p {
-  font-size: 1.2vmax;
+  font-size: 1vmax;
 }
 
 .Maps {
@@ -567,7 +553,6 @@ footer p {
   margin: 0;
   padding: 0;
 }
-
 
 /*********************SECTION FACEBOOK***************/
 #Facebook {
