@@ -30,7 +30,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-image: url(./IMGLOGOS/Capa\ Background\ Site.jpg);
+  background-image: url(./Capa\ Background\ Site.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: bottom left;
@@ -129,7 +129,7 @@ body {
 .SectionPlataforma {
   border-top: 10px solid rgb(0, 0, 0);
   background-color: rgb(95, 95, 95);
-  background-image: url(./IMGLOGOS/main-grid-1-2.jpg);
+  background-image: url(./main-grid-1-2.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -286,7 +286,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(0, 0, 0);
-  background-image: url(./IMGLOGOS/grid\ 2\ background.webp);
+  background-image: url(./grid\ 2\ background.webp);
 
   background-position: center;
   background-repeat: no-repeat;
@@ -414,7 +414,7 @@ iframe {
   justify-content: space-evenly;
   align-items: center;
   height: 50vmax;
-  background-image: url(./IMGLOGOS/background-site.jpg);
+  background-image: url(./background-site.jpg);
   background-position: right;
   background-size: cover;
 }
@@ -555,24 +555,19 @@ footer p {
   border: 2px solid white;
   width: 15vmax;
   height: 10vmax;
-  filter: drop-shadow(0 0 2px greenyellow);
 }
 .LogoFooter {
-  width: 10vmax;
-  filter: drop-shadow(0 0 2px greenyellow);
+  width: 12vmax;
 }
 
 .DivEndFooter {
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly;
-  
 }
 
 .DivContatoFooter {
   margin: 0;
   padding: 0;
 }
+
 
 /*********************SECTION FACEBOOK***************/
 #Facebook {
